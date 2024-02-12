@@ -5,8 +5,10 @@ import { useState, useEffect } from 'react';
 import { Autocomplete, TextField } from '@mui/material';
 import DashTitle from './DashTitle';
 
+
 async function fetchStockData(){
-  
+
+  ///------------------------------------------Fetch Made for CoinRanking-------------------------------/////
   const url = 'https://api.coinranking.com/v2/coins';
   const options = {
     headers: {
@@ -26,10 +28,11 @@ async function fetchStockData(){
     volume: parseFloat(coin['24hVolume']) //  这里报错可能是整除的问题,因为本来的数字是String，所以无法进行//Float运算。
   }));
   return coins
-  //because this is async function, this becomes promise again
-
-  // Quote
+  // //because this is async function, this becomes promise again
+  /////////-----------------------Fetch Made for CoinRanking--------------------------------------///////////
+  // // Quote
   
+
 }
 
 
