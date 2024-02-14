@@ -164,7 +164,7 @@ const HeatMap = () => {
              * smaller margin will collapse or disappear. This happens vertically, both at the top 
              * and bottom of elements. */
 
-        }}>
+        }}/>
             <Container sx={{
                 maxWidth: '80vw',
                 position:'absolute',
@@ -176,12 +176,11 @@ const HeatMap = () => {
                 <h1>This is a Heating Map</h1>
                 {/* <LineChart width={400} height={400} data= {data}> */}
                     <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-                </LineChart>
+                    <LineChart/>
                 <p1>Top trading volumes are going to be rendered here</p1>
             </Container>
 
-        </Container>
-
+       
     </ThemeProvider>
   )
 }
