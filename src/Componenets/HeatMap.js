@@ -177,6 +177,7 @@ const HeatMap = () => {
                 {/* <LineChart width={400} height={400} data= {data}> */}
                     <Line type="monotone" dataKey="uv" stroke="#8884d8" />
                     <LineChart/>
+                    <LineChart/>
                 <p1>Top trading volumes are going to be rendered here</p1>
             </Container>
 
